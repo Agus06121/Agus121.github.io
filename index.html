@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caesar Cipher</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #143d6d8e;
+}
+
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.result {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Caesar Cipher</h2>
+  <label for="plaintext">Plaintext:</label>
+  <input type="text" id="plaintext" placeholder="Enter text...">
+  <label for="shift">Shift amount:</label>
+  <input type="number" id="shift" placeholder="Enter shift...">
+  <button onclick="encryptText()">Encrypt</button>
+  <button onclick="decryptText()">Decrypt</button>
+  <div class="result">
+    <p id="encrypted"></p>
+    <p id="decrypted"></p>
+  </div>
+</div>
+
+<script src="script.js">
+    
+</script>
+
+</body>
+</html>
